@@ -1,0 +1,75 @@
+.main-content {
+}
+
+.banner{
+    &__wrapper {
+        background-image: url('../assets/imgs/slide.png');
+        width: 100%;
+        min-height: 500px;
+        padding: 170px 85px 83px 85px;
+        font-weight: 700;
+        font-size: 64px;
+        text-align: right;
+        line-height: 57.6px;
+    }
+
+    &__cta{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        background: #434D1D;
+        text-transform: uppercase;
+        font-style: normal;
+        margin-top: 40px;
+        min-height: 60px;
+        min-width: 222px;
+    }
+}
+
+.services {
+    &__wrapper {
+    }
+
+    &__card {}
+
+    &__link {}
+}
+
+.popular {
+}
+.popular-items {
+}
+.item__id {
+}
+.iteam_name {
+}
+.item__price {
+}
+.item__add {
+}
+.research {
+}
+.research__text {
+}
+.research__cta {
+}
+.news {
+}
+.news__header.fl.fl-sb {
+}
+.news__switch {
+}
+.display-news.btn.btn-active {
+}
+.display-sales.btn {
+}
+.news__link {
+}
+.news__body {
+}
+.news__post {
+}

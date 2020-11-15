@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fl {
+    display: flex;
+
+    &-sb {
+        justify-content: space-between;
+    }
+
+    &-aic {
+        align-items: center;
+    }
+}
