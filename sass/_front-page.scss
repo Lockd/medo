@@ -31,45 +31,208 @@
 }
 
 .services {
+    margin-top: 40px;
+    h2 {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
     &__wrapper {
     }
 
-    &__card {}
+    &__card {
+        position: relative;
+        max-width: 250px;
+    }
 
-    &__link {}
+    &__link {
+        position: absolute;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #000;
+        left: 23px;
+        top: 20px;
+    }
 }
 
 .popular {
+    margin-top: 45px;
+    h2 {
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
 }
 .popular-items {
+    display: flex;
+    padding: 30px 39px 30px 34px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D0D0D0;
 }
+
+.popular .container .popular-items:nth-child(2) {
+    border-top: 1px solid #D0D0D0;
+}
+
 .item__id {
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #717171;
 }
-.iteam_name {
+.item_name {
+    width: 490px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #434D1D;
 }
 .item__price {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: 53px;
+    margin-left: auto;
 }
 .item__add {
 }
 .research {
+    padding: 47px 90px;
+    background: url(../assets/imgs/rbg.jpg) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 .research__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    h2{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #fff;
+    }
 }
 .research__cta {
+    padding: 22px 29px;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #434D1D;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: #434D1D;
+        color: #fff;
+    }
 }
 .news {
+    margin-top: 40px;
+    margin-bottom: 63px;
 }
 .news__header.fl.fl-sb {
+    margin-bottom: 25px;
+    align-items: center;
 }
 .news__switch {
-}
-.display-news.btn.btn-active {
-}
-.display-sales.btn {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    a {
+        text-transform: uppercase;
+        color: rgba(67, 77, 29, 0.4);
+        cursor: pointer;
+    }
+    a.btn-active {
+        color: #000;
+    }
 }
 .news__link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #434D1D;
+    text-decoration: underline;
 }
 .news__body {
+    display: flex;
+    margin: 0 -12px;
 }
 .news__post {
+    position: relative;
+    width: 33.3333%;
+    display: block;
+    padding: 0 12px;
+    p {
+        margin: 0;
+        position: absolute;
+        left: 23px;
+        right: 17px;
+        bottom: 3px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #fff;
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    h3 {
+        margin: 0;
+        position: absolute;
+        left: 23px;
+        right: 17px;
+        bottom: 63px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+    }
+}
+
+.footer {
+    padding: 41px 0 39px;
+    border-top: 1px solid #DBDBDB;
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__about {
+        font-size: 18px;
+        line-height: 21px;
+        margin-right: 122px;
+    }
+    &__nav {
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 690px;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+    }
+    &__address {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__phone {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
