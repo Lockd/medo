@@ -5,9 +5,9 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    width: 1280px;
+    padding: 0 15px;
+    width: 100vw;
+    max-width: 1310px;
     margin: 0 auto;
 }
 
@@ -26,6 +26,7 @@ h2 {
     line-height: 28.13px;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .fl {
@@ -38,4 +39,8 @@ h2 {
     &-aic {
         align-items: center;
     }
+}
+
+.container {
+    margin: 0 90px;
 }
