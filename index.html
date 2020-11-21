@@ -9,6 +9,7 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <title>ABC - современная лаборатория</title>
 </head>
 <body>
@@ -249,5 +250,36 @@
         </div>
     </div>
 </footer>
+<div class="modal modal__appointment">
+    <div class="modal__body">
+        <div class="modal__exit"></div>
+        <div class="modal__title">Запись к врачу онлайн</div>
+        <div class="modal__text">Товарищи! консультация с широким активом представляет собой интересный эксперимент проверки существенных финансовых и административных условий. </div>
+        <form action="" id="appointment">
+            <input class="modal__long-input" type="text" placeholder="Ваше ФИО*" required>
+            <div class="modal__row">
+                <input class="modal__short-input" type="email" placeholder="E-mail*" required>
+                <input class="modal__short-input" type="phone" placeholder="Телефон*" required>
+            </div>
+            <textarea name="msg" id="" cols="30" rows="10" placeholder="Сообщение*" required></textarea>
+            <div class="modal__checkbox">
+                <input id="check" type="checkbox">
+                <label for="check">Я согласен(а) с <a href="#">условиями на обработку персональных данных</a></label>
+            </div>
+            <div class="modal__bottom">
+                <a href="#" class="modal__bottom-button">записаться</a>
+                <p>*Обязательные поля для заполнения</p>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(".research__cta").click(function () {
+        $('.modal__appointment').css( "display", "flex" );
+    });
+    $('.modal__exit').click(function () {
+        $(this).closest(".modal").css( "display", "none" );
+    })
+</script>
 </body>
 </html>
